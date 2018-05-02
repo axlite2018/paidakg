@@ -15,10 +15,11 @@ html, body {
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
-.container_header{
+.container_header_footer{
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 15px;
+  padding: 0 15px;
+  border-top: 1px solid grey;
   background: var(--bg-blue);
 }
 .container {
@@ -579,13 +580,6 @@ p {
 /* FOOTER */
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
-.container_footer{
-	max-width: 1200px;
-	margin: 0 auto;
-  padding: 0 15px;
-  border-top: 1px solid grey;
-  background: var(--bg-blue);
-}
 
 .footer-distributed{
 	background-color: rgb(225, 225, 225);
