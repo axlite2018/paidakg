@@ -2,9 +2,332 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" href="fontawesome/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/media.css">
+  	<link rel="stylesheet" href="css/font-awesome.min.css">
     <title></title>
   </head>
   <body>
-    <h1>Hello World</h1>
+
+    <!--   HEADER   -->
+
+    <header>
+
+  		<div class="container">
+  			<div class="top_line">
+  				<button class="toggle_mnu">
+  					<span class="sandwich">
+  						<span class="sw-topper"></span>
+  						<span class="sw-bottom"></span>
+  						<span class="sw-footer"></span>
+  					</span>
+  				</button>
+  				<nav class="top_mnu">
+  					<ul>
+  						<li><a href="#">info</a></li>
+  						<li><a href="#">info</a></li>
+  						<li><a href="#">number</a></li>
+  						<li><a href="#">time</a></li>
+  						<li>
+  							<div class="social_wrap">
+  								<a href="#" class="soc_ic"><i class="fa fa-facebook"></i></a>
+  								<a href="#" class="soc_ic"><i class="fa fa-google"></i></a>
+  								<a href="#" class="soc_ic"><i class="fa fa-whatsapp"></i></a>
+  								<a href="#" class="soc_ic"><i class="fa fa-instagram"></i></a>
+  							</div>
+  						</li>
+  					</ul>
+  				</nav>
+  				<div class="autorize">
+  					<a href="#" class="header_button">Вход</a>
+  					<a href="#" class="header_button">Регистрация</a>
+  				</div>
+  			</div>
+  			<div class="middle_line">
+  				<div class="logo"><a href="#">Logo</a></div>
+  				<div class="social_wrap">
+  					<a href="#" class="soc_ic"><i class="fa fa-facebook"></i></a>
+  					<a href="#" class="soc_ic"><i class="fa fa-google"></i></a>
+  					<a href="#" class="soc_ic"><i class="fa fa-whatsapp"></i></a>
+  					<a href="#" class="soc_ic"><i class="fa fa-instagram"></i></a>
+  				</div>
+  				<div class="middle_buttons">
+  					<a href="#" class="header_button middle_btn">Купить</a>
+  					<a href="#" class="header_button middle_btn">Продать</a>
+  					<a href="#" class="active button middle_btn">Меню</a>
+  				</div>
+
+  			</div>
+  		</div>
+  	</header>
+
+
+    <!--  INFORMATION  -->
+
+    <section class="info">
+  		<div class="container">
+  			<div class="menu__con">
+  				<ul class="nav__list">
+  					<li class="nav__item menu__con__item">
+  						<a href="#" class="nav__link menu__con__link">
+  							Бизнес
+  						</a>
+  					</li>
+  					<li class="nav__item menu__con__item">
+  						<a href="#" class="nav__link menu__con__link">
+  							Бизнес Активы
+  						</a>
+  					</li>
+  					<li class="nav__item menu__con__item">
+  						<a href="#" class="nav__link menu__con__link">
+  							Бизнес идеи
+  						</a>
+  					</li>
+  					<li class="nav__item menu__con__item">
+  						<a href="#" class="nav__link menu__con__link">
+  							Услуги
+  						</a>
+  					</li>
+  					<li class="nav__item menu__con__item">
+  						<a href="#" class="nav__link menu__con__link">
+  							О нас
+  						</a>
+  					</li>
+  					<li class="nav__item menu__con__item">
+  						<a href="#" class="nav__link menu__con__link">
+  							Команда
+  						</a>
+  					</li>
+  				</ul>
+  			</div>
+  			<div class="infomation">
+  				<div class="infomation__fon">
+  					<div class="infomation__title">
+  						Информация
+  					</div>
+  					<div class="infomation__saerch">
+  						<div class="information__input">
+  							<input type="search" class="input__search">
+  							<i class="fa fa-search i__search" aria-hidden="true"></i>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="info__knopka">
+  				<a href="#" class="info__button">
+  					Горячее предложение
+  				</a>
+  			</div>
+  			<div class="carousel-top">
+  				<div id="slider">
+  					<div id="slider__box">
+  						<ul class="slider__ul">
+  							<li id="img__1">
+  								<a href="#" class="slider__link"><img src="pics/foto2.jpg" alt="foto1"></a>
+  							</li>
+  							<li id="img__2">
+  								<a href="#" class="slider__link"><img src="pics/foto1.jpg" alt="foto2"></a>
+  							</li>
+  							<li id="img__3">
+  								<a href="#" class="slider__link"><img src="pics/foto2.jpg" alt="foto3"></a>
+  							</li>
+  							<li id="img__4">
+  								<a href="#" class="slider__link"><img src="pics/foto1.jpg" alt="foto4"></a>
+  							</li>
+  							<li id="img__5">
+  								<a href="#" class="slider__link"><img src="pics/foto1.jpg" alt="foto5"></a>
+  							</li>
+  							<li id="img__6">
+  								<a href="#" class="slider__link"><img src="pics/foto1.jpg" alt="foto6"></a>
+  							</li>
+  							<li id="img__7">
+  								<a href="#" class="slider__link"><img src="pics/foto1.jpg" alt="foto7"></a>
+  							</li>
+  							<li id="img__8">
+  								<a href="#" class="slider__link"><img src="pics/foto1.jpg" alt="foto8"></a>
+  							</li>
+  							<li id="img__9">
+  								<a href="#" class="slider__link"><img src="pics/foto1.jpg" alt="foto9"></a>
+  							</li>
+  							<li id="img__10">
+  								<a href="#" class="slider__link"><img src="pics/foto1.jpg" alt="foto10"></a>
+  							</li>
+  						</ul>
+  					</div>
+  					<div id="nav__slider">
+  						<div id="left__nav">
+  							<i class="fa fa-chevron-left"></i>
+  						</div>
+  						<div id="right__nav">
+  							<i class="fa fa-chevron-right"></i>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+
+    <!--   BUSINESS-CARD   -->
+    <div class="container mtb-30 bord-top-but">
+        <div class="top_btn">
+            <a href="#" class="business_btn biznes-header">Готовый бизнес</a>
+        </div>
+        <div class="grid-for-biznes">
+            <div class="biznes-card">Автомойки автосервисы СТО</div>
+            <div class="biznes-card">Аптечный бизнес</div>
+            <div class="biznes-card">Бизнес в сфере услуг</div>
+            <div class="biznes-card">Рестораны, кафе, бары, пиццерии</div>
+            <div class="biznes-card">Сельское хозяйство</div>
+            <div class="biznes-card">Т</div>
+            <div class="biznes-card">Lorem ipsum dolor sit.</div>
+            <div class="biznes-card">Lorem ipsum dolor sit.</div>
+        </div>
+        <div class="bottom-btn">
+            <a href="#" class="business_btn biznes-header">Посмотреть все категории</a>
+        </div>
+    </div>
+
+    <!--  BUSINESS-ACTIV  CAROUSEL    -->
+
+    <div class="container">
+      <div class="top_btn"><a class="business_btn" href="#">Бизнес Активы</a></div>
+      <div id="carousel" class="carousel">
+        <span class="arrow prev"><i class="fas fa-arrow-circle-left fa-2x"></i></span>
+        <div class="gallery">
+          <ul class="images">
+            <li><a href="https://github.com/" target="_blank"><img src="pics/family.png"></a></li>
+            <li><a href="#" target="_blank"><img class="business_active_img" src="pics/shrek.jpg"></a></li>
+            <li><a href="#" target="_blank"><img class="business_active_img" src="pics/smile.jpg"></a></li>
+            <li><a href="#" target="_blank"><img class="business_active_img" src="pics/sofa.jpg"></a></li>
+            <li><a href="#" target="_blank"><img class="business_active_img" src="pics/star.jpg"></a></li>
+            <li><a href="#" target="_blank"><img class="business_active_img" src="pics/sun.jpg"></a></li>
+            <li><a href="#" target="_blank"><img class="business_active_img" src="pics/wedding.jpg"></a></li>
+            <li><a href="#" target="_blank"><img class="business_active_img" src="pics/wood.jpg"></a></li>
+            <li><a href="#" target="_blank"><img class="business_active_img" src="pics/java.png"></a></li>
+            <li><a href="#" target="_blank"><img class="business_active_img" src="pics/bath.jpg"></a></li>
+            <li><a href="#" target="_blank"><img class="business_active_img" src="pics/babe.jpg"></a></li>
+            <li><a href="#" target="_blank"><img class="business_active_img" src="pics/chair.jpg"></a></li>
+          </ul>
+        </div>
+        <span class="arrow next"><i class="fas fa-arrow-circle-right fa-2x"></i></span>
+      </div>
+      <div class="bottom-btn"><a class="business_btn" href="#">Подробнее</a></div>
+
+    </div>
+
+    <!--   SOVETY - ADVICES    -->
+
+    <div class="container">
+        <div class="top_btn">
+            <a href="#" class="business_btn">Советы</a>
+        </div>
+        <div class="middle">
+            <div class="oneLeft card">
+                <span class="title">Title</span>
+                <div class="oneLeftInner">
+                    <img src="pics/id.svg" alt="id_picture" class="idImg">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis facere laboriosam natus sint libero soluta alias repellendus non fugit hic?</p>
+                </div>
+                <p style="display: block;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, voluptas id. Nulla, illo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquam temporibus iure magni.</p>
+            </div>
+            <div class="twoRightOne">
+                <div class="card">
+                    <span class="title">Title</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, autem debitis? Eum blanditiis sunt hic, molestias nulla nostrum praesentium maxime rem eos! Beatae?</p>
+                </div>
+                <div class="card mt-15">
+                    <span class="title">Title</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, autem debitis? Eum blanditiis sunt hic, molestias nulla nostrum praesentium maxime rem eos! Beatae?</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="bottom-btn">
+            <a href="#" class="business_btn">Посмотреть Советы</a>
+        </div>
+    </div>
+
+    <!--  ABOUT US   -->
+
+    <div class="container_about_us">
+      <div class="top_btn item1">
+        <a class="business_btn" href="#">О Нас</a>
+      </div>
+      <div class="finance_articles">
+
+        <p><strong>BNC finance-</strong>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione</p>
+        <p><strong>BNC finance-</strong>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione</p>
+        <p><strong>BNC finance-</strong>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione</p>
+
+      </div>
+      <div class="big-finance-box">
+        <div class="big-bnc">
+          <h2>
+            <span class="big-word">BIG</span> <br>
+            <span class="finance">FINANCE</span>
+          </h2>
+        </div>
+      </div>
+      <div class="top_btn item3"><a class="business_btn" href="#">История Успеха</a></div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="container_footer">
+  		<footer class="footer-distributed">
+
+  			<div class="footer-left">
+
+  				<div class="footer-logo">
+  					<img src="pics/petya.jpeg" width="150" height="150">
+  				</div>
+
+  			</div>
+
+  			<div class="footer-center">
+
+  				<div class="footer-icons">
+
+  					<a href="#"><i class="fa fa-twitter"></i></a>
+  					<a href="#"><i class="fa fa-skype"></i></a>
+  					<a href="#"><i class="fa fa-google-plus"></i></a>
+  					<a href="#"><i class="fa fa-facebook"></i></a>
+
+  				</div>
+
+  			</div>
+
+  			<div class="footer-right">
+
+
+  				<div>
+  					<i class="fa fa-phone"></i>
+  					<p>+996312587000, +996312910925</p>
+  				</div>
+
+  				<div>
+  					<i class="fa fa-envelope"></i>
+  					<p><a href="mailto:support@company.com">bnc.finance.ib@gmail.com</a></p>
+  				</div>
+
+  				<div>
+  					<i class="fa fa-map-marker"></i>
+  					<p>ул. Турусбекова, 31, офис 402</p>
+  				</div>
+
+  			</div>
+
+  	</footer>
+  	</div>
+
+    <script src="index.js">
+    </script>
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/common.js"></script>
   </body>
 </html>
