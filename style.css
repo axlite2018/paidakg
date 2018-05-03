@@ -1,5 +1,5 @@
 :root {
-  --bg-blue: #83B5D1;
+  --light-grey: #D1D5DE;
 }
 
 html, body {
@@ -20,11 +20,11 @@ html, body {
 	margin: 0 auto;
   padding: 0 15px;
   border-top: 1px solid grey;
-  background: var(--bg-blue);
+  background: var(--light-grey);
 }
 .container {
   max-width: 1200px;
-  background: var(--bg-blue);
+  background: var(--light-grey);
   margin: 0 auto;
   padding: 0 15px;
   display: grid;
@@ -115,7 +115,6 @@ text-transform: uppercase;}
 	background-color: grey;
 }
 
-
 .toggle_mnu {
   width: 40px;
   height: 40px;
@@ -184,7 +183,7 @@ background: orange;}
   top: 0;
   transform: rotate(180deg); }
 
-/*   GET IMFORMATION   */
+/*   GET INFORMATION   */
 
 .menu__con {
 	margin: 1rem 0;
@@ -375,6 +374,55 @@ background: orange;}
 	z-index: 300;
 }
 
+@media screen and (max-width: 1092px) {
+  div#slider {
+    max-width: 770px;
+  }
+  div#slider__box{
+    max-width: 710px;
+  }
+  .fa-chevron-right {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  div#slider {
+    max-width: 530px;
+  }
+  div#slider__box{
+    max-width: 470px;
+  }
+  .fa-chevron-right {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  div#slider {
+    max-width: 290px;
+  }
+  div#slider__box{
+    max-width: 240px;
+  }
+  .fa-chevron-right {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  div#slider {
+    margin-left: 5%;
+  }
+  input.input__search {
+    width: 300px;
+  }
+  div.infomation {
+    height: 23rem;
+    max-width: 100%;
+    margin: 5%;
+  }
+}
 
 /* ГОТОВЫЙ БИЗНЕС*/
 
@@ -383,11 +431,10 @@ background: orange;}
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
-    margin-bottom: 60px;
 }
 .biznes-card {
     width: 100%;
-    height: 110px;
+    height: 150px;
     border: 1px solid black;
     background: #979797;
 }
@@ -405,6 +452,17 @@ background: orange;}
     border-bottom: 1px solid #000;
 }
 
+@media screen and (max-width: 800px) {
+  .grid-for-biznes{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid-for-biznes{
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 /*  БИЗНЕС АКТИВЫ И КАРУСЕЛЬ*/
 
@@ -491,6 +549,23 @@ div.bottom-btn {
   margin-top: 80px;
 }
 
+@media screen and (max-width: 1180px) {
+  .carousel {
+    max-width: 735px;
+  }
+  .gallery {
+    max-width: 780px;
+  }
+
+}
+@media screen and (max-width: 870px) {
+  .carousel {
+    max-width: 370px;
+  }
+
+
+}
+
 /*   СОВЕТЫ   */
 
 
@@ -540,41 +615,26 @@ div.bottom-btn {
 
 .container_about_us {
   max-width: 1200px;
-  background: #83B5D1;
+  background: var(--light-grey);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 70% auto;
+  grid-template-columns: auto;
   grid-template-rows: 70px auto 70px;
   border-bottom: 1px solid grey;
   padding: 15px;
 }
 
-p {
+.finance_articles p {
   font-size: 18px;
 }
-.item1 {
-  grid-column: 1/3;
+
+@media screen and (max-width:920px) {
+  .finance_articles p {
+    text-align: justify;
+  }
 }
-.item3 {
-  grid-row-start: 3;
-}
-.big-finance-box {
-  margin: 0 auto;
-}
-.big-bnc {
-  display: inline-block;
-  padding: 0 5px;
-  margin-top: 40px;
-}
-.big-bnc h2 {
-  font-size: 40px;
-}
-.big-bnc .big-word {
-  font-size: 100px;
-}
-.finance {
-  border-bottom: 2px solid blue;
-}
+
+
 
 
 /* FOOTER */
@@ -582,7 +642,7 @@ p {
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 .footer-distributed{
-	background-color: rgb(225, 225, 225);
+	background-color: var(--light-grey);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
