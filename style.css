@@ -611,6 +611,13 @@ div.bottom-btn {
     margin-top: 15px;
 }
 
+@media screen and (max-width: 580px) {
+  .middle {
+      grid-template-columns: repeat(1, 1fr);
+
+  }
+}
+
 /* О НАС */
 
 .container_about_us {
